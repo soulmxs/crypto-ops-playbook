@@ -1,0 +1,25 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Temp / backups
+*.tmp
+*.bak
+*~ 
+*.csv~*
+*.swp
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# Screens / exports (если будешь выкладывать — убери из игнора)
+exports/
+screenshots/
+
+# Never commit secrets (пусть этой папки не будет в репо)
+secrets/
