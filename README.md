@@ -19,3 +19,11 @@ No private keys, seed phrases, API keys, or exchange credentials.
 ---
 ### License
 MIT
+
+---
+
+### 🗺️ Project board
+Track progress → [Crypto Ops Roadmap](../../projects)
+
+### 📋 Open tasks
+See → [Issues](../../issues)
