@@ -1,0 +1,14 @@
+roles:
+  main:
+    chain: ETH
+    purpose: withdrawals / bridges
+  farm1:
+    chain: BNB
+    purpose: tasks / social / testnets
+  farm2:
+    chain: Arbitrum
+    purpose: volume / campaigns
+rotation:
+  ip_policy: "unique IP per exchange"
+  cooldown_days: 3
+  notes: "no API keys in public; keep custodial vs non-custodial separated"
