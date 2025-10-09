@@ -1,0 +1,3 @@
+exchange,pair,side,leverage,position_size,cap_per_day,holding_time,notes,status
+Bybit,ETHUSDT,long,3x,200,50k,>30m,points & fees,future
+OKX,SOLUSDT,hedge,2x,150,30k,>20m,night carry,planned
