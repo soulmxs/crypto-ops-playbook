@@ -27,3 +27,7 @@ Track progress → [Crypto Ops Roadmap](../../projects)
 
 ### 📋 Open tasks
 See → [Issues](../../issues)
+
+
+_Update: added readme-stats section (2025-10-12)_
+
