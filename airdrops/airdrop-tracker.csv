@@ -2,3 +2,5 @@ project,chain,account(s),tasks,status,deadline,proof_link,notes
 Seedify,BNB,acc1;acc2,follow;discord;testnet,doing,2025-11-01,,phase 2 opens soon
 Aster,ETH,acc-main;acc-2,trade;hold;referrals,planned,2025-12-15,,
 Toolbit,Arbitrum,acc-test1,swap;bridge,planned,2025-11-15,,small test campaign
+Naked,Base,acc-01;acc-02,swap;stake,doing,2025-11-30,,Stage 1 running
+
