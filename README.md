@@ -31,3 +31,6 @@ See → [Issues](../../issues)
 
 _Update: added readme-stats section (2025-10-12)_
 
+
+_Status update: 2025-10-11 — minor review done_
+
