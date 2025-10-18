@@ -1,5 +1,9 @@
 # 🧭 Crypto Ops Playbook
 
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Issues](https://img.shields.io/github/issues/soulmxs/crypto-ops-playbook)
+![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+
 Guides, templates and checklists I use for **airdrops**, **volume campaigns**, **wallet rotation**, and **risk management**.
 
 ## 📂 Structure
