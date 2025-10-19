@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
   issues: write
-  projects: write
+  pull-requests: write
 
 jobs:
   sync:
