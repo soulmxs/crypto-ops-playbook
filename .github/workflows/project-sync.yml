@@ -1,0 +1,24 @@
+name: Auto Project Sync
+
+on:
+  issues:
+    types: [opened, edited, closed]
+
+permissions:
+  contents: write
+  issues: write
+  projects: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync issue with project
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue = context.payload.issue
+            const state = issue.state
+            const title = issue.title
+            const projectNumber = 1  // если твой проект — первый в списке
+            console.log(`Updating project card for: ${title} (${state})`)
