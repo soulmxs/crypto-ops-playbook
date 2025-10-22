@@ -1,6 +1,6 @@
 # 🧭 Crypto Ops Playbook
 
-![Build Status](https://github.com/soulmxs/ecom-floor-mats-kit/actions/workflows/test.yml/badge.svg)
+[![Build Check](https://github.com/soulmxs/crypto-ops-playbook/actions/workflows/test.yml/badge.svg)](https://github.com/soulmxs/crypto-ops-playbook/actions/workflows/test.yml)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/soulmxs/crypto-ops-playbook?color=brightgreen)
 ![GitHub issues](https://img.shields.io/github/issues/soulmxs/crypto-ops-playbook)
