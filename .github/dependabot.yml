@@ -1,0 +1,29 @@
+version: 2
+updates:
+  # 1. Обновления GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # 2. Обновления npm (если будут JS-скрипты или бот)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # 3. Обновления Python (если будешь добавлять ботов на Python)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # 4. Автоматическое объединение безопасных обновлений
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    allow:
+      - dependency-type: "direct"
+    ignor
