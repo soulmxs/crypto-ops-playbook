@@ -1,0 +1,22 @@
+name: Keep Repository Alive
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'  # выполняется каждую неделю по понедельникам в 12:00 UTC
+  workflow_dispatch:       # можно запустить вручную через Actions
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make a keep-alive commit
+        run: |
+          echo "Last keep-alive run: $(date)" > .github/last-keepalive.txt
+          git config user.name "soulmxs-bot"
+          git config user.email "actions@github.com"
+          git add .github/last-keepalive.txt
+          git commit -m "chore: weekly keep-alive" || echo "No changes to commit"
+          git push
