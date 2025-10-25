@@ -2,8 +2,12 @@ name: Keep Repository Alive
 
 on:
   schedule:
-    - cron: '0 12 * * 1'  # выполняется каждую неделю по понедельникам в 12:00 UTC
-  workflow_dispatch:       # можно запустить вручную через Actions
+    - cron: '0 12 * * 1'   # по понедельникам 12:00 UTC
+  workflow_dispatch:
+
+# Важно: даём токену право пушить
+permissions:
+  contents: write
 
 jobs:
   keepalive:
@@ -13,10 +17,17 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Make a keep-alive commit
+        shell: bash
         run: |
-          echo "Last keep-alive run: $(date)" > .github/last-keepalive.txt
-          git config user.name "soulmxs-bot"
-          git config user.email "actions@github.com"
+          mkdir -p .github
+          echo "Last keep-alive run: $(date -u) UTC" > .github/last-keepalive.txt
+
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
           git add .github/last-keepalive.txt
           git commit -m "chore: weekly keep-alive" || echo "No changes to commit"
+
+          # на случай гонки с другими коммитами
+          git pull --rebase
           git push
